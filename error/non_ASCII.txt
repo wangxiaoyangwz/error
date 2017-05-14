@@ -1,0 +1,3 @@
+出现"non-ASCII character '\xe8' in file hello.py"错误
+
+           开头加上 # -*- coding: utf-8 -*-
