@@ -1,0 +1,6 @@
+﻿《Flask web 开发》中第六章
+
+      设置环境变量  set MAIL_USERNAME=<Gmail username> 会出现“syntax error near unexpected token 'newline'”错误
+
+      解决方法：符号「<」和「>」　是重定向字符，是特殊字符有特殊意义。用转义字符 "\"
+      又查了一些资料 讲直接去掉<>就好了，写成set MAIL_USERNAME=Gmail username
