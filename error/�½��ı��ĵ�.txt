@@ -1,0 +1,12 @@
+问题：
+alembic.util.exc.CommandError: Can't locate revision identified by 'b44ffb6f5dc6'
+ Git add/commit/push heroku后，数据库 migrate就会失败
+本地和远程的 Alembic migration是不一致的，会导致冲突。
+
+解决方法：
+用远程 Postgres 命令行，删除数据库里 alembic_version这个表格里数据就行。
+将生成的数据库删除，重新
+db.create_all()
+python manage.py init
+python manage.py migrate
+python manage.py upgrade

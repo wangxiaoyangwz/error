@@ -1,0 +1,2 @@
+当我想在python32中安装pip时需要ez_setup.py,但是使用python ez_setup.py时有 说106行有错误
+  解决：是版本问题，ez_setup对pyhton3XX,是有问题的，需要使用python2
