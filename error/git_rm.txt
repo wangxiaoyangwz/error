@@ -1,0 +1,23 @@
+问题："git add ."对被删除的内容是无效的，还需要"git rm filename"删除文件，但是git rm命令貌似没有类似"git rm ."的用法（这样可以执行，但意思是删除所有文件），于是，当有比较大量的文件被删除时，一个个的git rm非常麻烦。。
+
+解决：git add -A
+      它会把我们未通过 git rm 删除的文件全部stage
+
+
+还有个git commit -a可以用, 大致是删除的文件会自动标记, 但对新建文件就不行
+
+git 可以用glob 模式通配符。Git 也有它自己的文件模式扩展匹配方式 比如 git rm *.c 删除当前目录及递归所有子目录下.c结尾的文件。 git rm *.c 则只删除当前目录的.c 文件。
+
+1、先把缓存中的文件清空。
+git rm -r --cached 某个目录
+2、再把所有文件重新加入缓存
+git add .
+
+参考：https://segmentfault.com/q/1010000000095373
+
+
+git rm a.txt ，误将a.txt删除后找回方法：
+
+1. git log 找到离没删文件前最近的commit id
+2. 将操作过的其它文件转移
+3. git reset --hard "commit id"

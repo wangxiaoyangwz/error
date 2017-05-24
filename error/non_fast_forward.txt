@@ -1,0 +1,31 @@
+错误：[admin@bogon project]$ git push  
+To https://admin-zou@github.com/admin-zou/project.git  
+ ! [rejected]        master -> master (non-fast-forward)  
+error: failed to push some refs to 'https://admin-zou@github.com/admin-zou/project.git'  
+To prevent you from losing history, non-fast-forward updates were rejected  
+Merge the remote changes before pushing again.  See the 'Note about  
+fast-forwards' section of 'git push --help' for details.  
+[admin@bogon project]$   
+
+git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去
+
+是因为在不同的电脑提交而导致冲突，为了避免冲突所以，服务器拒绝请求。
+解决冲突了就可以上传了，三部就可以了
+Git fetch origin
+git merge origin/master
+git push origin master
+
+借鉴：http://blog.csdn.net/zr1076311296/article/details/51098710
+
+http://blog.csdn.net/chain2012/article/details/7476493
+
+http://www.ithao123.cn/content-8390412.html
+
+原因是远程端的仓库和本地仓库master分支更新程度不一致,git仓库中已经有一部分代码，所以它不允许你直接把你的代码覆盖上去
+
+
+git pull将远程端的master拉倒本地
+
+git merge master
+
+git push

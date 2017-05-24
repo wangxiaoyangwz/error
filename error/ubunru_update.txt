@@ -1,0 +1,11 @@
+问题：在ubuntu更新时，出现错误E: Some index files failed to download, they have been ignored, or old ones used inst
+解决：
+可以将目录下/var/lib/apt/lists/partial/所有的文件清掉
+
+$ sudo rm /var/lib/apt/lists/* -vf
+
+再次运行apt-get update
+
+但是并没有解决我的问题
+
+借鉴http://jingyan.baidu.com/article/7f41ecec1b7a2e593d095ce6.html

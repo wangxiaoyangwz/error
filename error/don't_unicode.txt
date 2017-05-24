@@ -1,0 +1,6 @@
+Warning: Your console font probably doesn't support Unicode. If you experience strange characters in the output, consider switching to a TrueType font such as Lucida Console!
+
+
+Google 了半天不得要领。现将解决方法记录下来。其实很简单，将 CMD 的默认字体换位宋体即可
+
+参考：http://www.cnblogs.com/veryinf/archive/2012/10/26/2740899.html

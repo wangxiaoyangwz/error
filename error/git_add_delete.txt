@@ -1,0 +1,11 @@
+git add* 提交到本地服务端 然后再git status查看状态 如果红色部分看到有deleted字样
+
+ 因为在远端服务器还存在你删掉的文件，所以要先remove掉
+git rm 文件名#从版本库中删除
+git add .
+git commit
+
+恢复：你如果只是想恢复的话，可以使用命令：
+
+git checkout .
+git pull --rebase
