@@ -1,0 +1,3 @@
+安装完pip后出现unable to create process using "python.exe"的报错            
+    解决方法：
+使用Python -m pip就可以了
