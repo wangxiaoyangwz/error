@@ -1,3 +1,17 @@
 安装完pip后出现unable to create process using "python.exe"的报错            
     解决方法：
 使用Python -m pip就可以了
+
+
+第二次（第一种不行了）：
+ERROR：Fatal error in launcher: Unable to create process using '"'
+
+解决方法：
+
+python3:
+
+python3 -m pip install --upgrade pip
+
+参考：
+
+http://www.cnblogs.com/zgyc/p/6425793.html

@@ -1,0 +1,5 @@
+ 问题：python中出现IndentationError:unindent does not match any outer indentation level错误
+
+解决：根据错误提示，找到错误行，选中其前后几行，会发现有的行是
+....  有的行是  ————，修改成同样的就好了。tab的使用
+

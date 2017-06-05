@@ -1,0 +1,25 @@
+问题  windows下多个python版本共存:
+
+首先当然是安装你需要的两个不同版本的python，这里我安装的是2.7和3.3的，两个版本安装顺序无所谓
+
+检查环境变量，缺少的我们需要添加。先找到环境变量的位置。
+
+
+在Path环境变量中检查以下4个变量（Path中的环境变量是以分号隔开的）：
+1.c:\Python27
+2.c:\Python27\Scripts
+3.c:\Python33
+4.c:\Python33\Scripts
+少哪个加哪个，注意分号隔开。
+
+然后进入Python2.7安装目录找到如图内容，把python.exe改为python2.exe。
+
+然后进入python3.3安装目录。找到python.exe程序，把它重命名为python3.exe
+
+
+windows，建议在安装路径下的pip分别改成pip2和pip3进行区分
+
+参考：
+http://jingyan.baidu.com/article/b87fe19e94ca95521935686e.html
+https://zhidao.baidu.com/question/1704239582526310300.html
+
