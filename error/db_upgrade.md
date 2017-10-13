@@ -22,6 +22,6 @@ Flask-Migrate数据库迁移应用场景:
 
 >参考：[1](http://blog.csdn.net/clean_water/article/details/53811879)
 
- >     [2(]http://www.jianshu.com/p/032723bb9b05)
+ >     [2](]http://www.jianshu.com/p/032723bb9b05)
 
- >     [3] (http://www.crifan.com/flask_migrate_upgrade_database_error_alembic_util_exc_commanderror_cannot_locate_revision_identified_by/)
+ >     [3](http://www.crifan.com/flask_migrate_upgrade_database_error_alembic_util_exc_commanderror_cannot_locate_revision_identified_by/)
