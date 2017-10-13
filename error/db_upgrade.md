@@ -2,6 +2,16 @@
 
 ### 遇到了Target database is not up to date报错、No changes in schema detected报错
 
+我解决问题的方法不是很好，等我找到更好的方法后在修改
+
+1. 我将migrate文件删了
+2. 我又删除了flasky/data-dev.sqlite文件
+3. python manage.py db init
+4. python manage.py db migrate -m ''
+5. python manage.py upgrade
+
+成功完成，但是数据也都没有了
+
 Flask-Migrate数据库迁移应用场景:
 
 **比如**
@@ -10,8 +20,8 @@ Flask-Migrate数据库迁移应用场景:
 
 
 
->参考：[]http://blog.csdn.net/clean_water/article/details/53811879
+>参考：[1](http://blog.csdn.net/clean_water/article/details/53811879)
 
- >     http://www.jianshu.com/p/032723bb9b05
+ >     [2(]http://www.jianshu.com/p/032723bb9b05)
 
- >     http://www.crifan.com/flask_migrate_upgrade_database_error_alembic_util_exc_commanderror_cannot_locate_revision_identified_by/
+ >     [3] (http://www.crifan.com/flask_migrate_upgrade_database_error_alembic_util_exc_commanderror_cannot_locate_revision_identified_by/)
